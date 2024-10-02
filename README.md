@@ -63,6 +63,7 @@ print(torch.argmax(clf(img_tensor)))
 </code></pre>
 
 <p>This will classify the image <code>img_1.jpg</code> and print the predicted class label.</p>
+![Screenshot from 2024-10-02 21-44-25](https://github.com/user-attachments/assets/84d79f68-ace1-41be-8020-241904abf239)
 
 <h2 id="model-architecture">Model Architecture</h2>
 
