@@ -42,7 +42,13 @@
 <ol>
   <li>Clone this repository and navigate to the directory.</li>
   <li>Run the script using <code>python script.py</code> (assuming the script is named <code>script.py</code>).</li>
-  <li>The script will download the MNIST dataset, train the classifier, and save the model state to a file named <code>model_state.pt</code>.</li>
+  <li>The script will download the MNIST dataset using the following code</li>
+<pre><code>
+  import torch 
+  from torchvision import datasets
+  train = datasets.MNIST(root="./data", download=True, train=True, transform=ToTensor)
+</code></pre>
+  <li> save the model state to a file named <code>model_state.pt</code>.</li>
   <li>Once the training is complete, you can use the classifier to classify images by loading the saved model state and passing an image tensor to the <code>clf</code> object.</li>
 </ol>
 
